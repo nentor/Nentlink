@@ -1,4 +1,4 @@
-# nentlink-updated
+# nentlink
 
 ## Project setup
 ```
