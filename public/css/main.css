@@ -1,0 +1,255 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+:root {
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+  @media (max-width: 1024px) {
+    :root {
+      font-size: 52%; } }
+  @media (max-width: 768px) {
+    :root {
+      font-size: 48%; } }
+  @media (max-width: 640px) {
+    :root {
+      font-size: 40%; } }
+  @media (max-width: 425px) {
+    :root {
+      font-size: 36%; } }
+  @media (max-width: 375px) {
+    :root {
+      font-size: 32%; } }
+
+body {
+  font-family: "Bangers"; }
+
+.heading-primary {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .heading-primary--main {
+    display: block;
+    font-size: 13rem;
+    color: #fff;
+    margin-bottom: 3rem;
+    letter-spacing: 2rem; }
+    .heading-primary--main::selection {
+      background: none; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2.4rem;
+    color: #fff;
+    text-align: center;
+    padding: 0 4rem; }
+
+.heading-secondary {
+  font-size: 7rem;
+  margin-bottom: 2.5rem;
+  color: #05d5ff;
+  color: transparent;
+  letter-spacing: 5px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  background: linear-gradient(150deg, #05d5ff 50%, #a6ffcb);
+  -webkit-background-clip: text;
+  background-clip: text; }
+  .heading-secondary::selection {
+    background: none; }
+
+.header {
+  background: linear-gradient(150deg, #53f 15%, #05d5ff 70%, #a6ffcb 94%);
+  clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+  height: 95vh;
+  padding: 4rem;
+  position: relative;
+  z-index: 10; }
+  @media (max-width: 640px) {
+    .header {
+      clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); } }
+  @media (max-width: 425px) {
+    .header {
+      clip-path: polygon(0 0, 100% 0, 100% 84vh, 0 100%); } }
+  @media (max-width: 375px) {
+    .header {
+      clip-path: polygon(0 0, 100% 0, 100% 87vh, 0 100%); } }
+  .header__text-box {
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
+.button {
+  background-color: #53f;
+  display: inline-block;
+  margin-top: 4.5rem;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 0.35s; }
+  .button--main {
+    padding: 2rem 6rem;
+    color: #fff;
+    font-size: 2.2rem; }
+    @media (max-width: 640px) {
+      .button--main {
+        padding: 2rem 3.5rem; } }
+    .button--main:hover {
+      background-color: #fff;
+      color: #05d5ff;
+      box-shadow: 1px 1px 15px 10px #05d5ff; }
+  .button--sub {
+    position: relative;
+    margin-top: 1rem;
+    width: 15rem;
+    outline: none;
+    border: none;
+    padding: 1.6rem 3.5rem;
+    color: #fff;
+    align-self: center;
+    font-family: "Bangers";
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin-bottom: 7rem; }
+    @media (max-width: 640px) {
+      .button--sub {
+        padding: 1.8rem 2.5rem; } }
+    .button--sub:hover {
+      box-shadow: 0px 0px 12px 7px #05d5ff;
+      background-color: #fff;
+      color: #05d5ff; }
+
+.main {
+  padding: 50rem 0;
+  padding-top: 35rem;
+  padding-bottom: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #263859;
+  margin-top: -25vh; }
+  @media (max-width: 640px) {
+    .main {
+      padding-top: 45rem; } }
+
+.footer {
+  padding: 5rem 0;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  background-image: linear-gradient(150deg, #775cff, #53f); }
+  .footer .credits {
+    font-size: 4.3rem; }
+  .footer .credits__author {
+    color: #05d5ff;
+    text-shadow: 0.1rem 0.1rem #05d5ff; }
+
+.url-shortener {
+  display: flex;
+  flex-direction: column; }
+  .url-shortener__input {
+    width: 60rem;
+    height: 5rem;
+    margin-bottom: 1rem;
+    font-size: 1.9rem;
+    padding: 0 1rem;
+    background-color: #292a34;
+    color: #fff;
+    box-shadow: 0 0 2px 1px #53f;
+    box-shadow: 0 0 2px 1px #05d5ff;
+    border: none;
+    outline: none; }
+    .url-shortener__input:focus {
+      box-shadow: 0 0 2px 2px #53f; }
+    .url-shortener__input::placeholder {
+      color: #9e9e9e; }
+    .url-shortener__input::-moz-placeholder {
+      color: #fff; }
+  .url-shortener__button {
+    display: block;
+    padding: 1.5rem 2.5rem;
+    align-self: center;
+    outline: none;
+    border: none;
+    padding: 2rem 6rem;
+    background-color: #53f;
+    color: #fff;
+    font-size: 2rem;
+    font-family: "Bangers"; }
+
+.urlList {
+  width: 60rem; }
+  .urlList__list {
+    list-style-type: none;
+    padding: 0 3rem; }
+    .urlList__list:not(:empty) {
+      box-shadow: 0 0 5px 5px #05d5ff; }
+  .urlList__item {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 2rem 0; }
+  .urlList__original {
+    width: 15rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .urlList__shortened {
+    display: flex;
+    align-items: center; }
+  .urlList__link {
+    text-decoration: none;
+    color: #a6ffcb; }
+  .urlList__copy {
+    outline: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    color: #05d5ff; }
+    .urlList__copy:hover::before {
+      opacity: 1; }
+    .urlList__copy:active::before {
+      opacity: 0; }
+    .urlList__copy > .icon {
+      display: inline-block;
+      width: 2rem;
+      height: 1.7rem;
+      background-color: transparent;
+      margin-left: 1rem; }
+    .urlList__copy::before {
+      content: "Copy";
+      display: inline-block;
+      width: 6rem;
+      height: 2rem;
+      color: #fff;
+      position: absolute;
+      top: 0;
+      left: 140%;
+      opacity: 0;
+      transition: opacity 0.25s; }
+  .urlList__remove {
+    color: #e41749;
+    font-size: 3.5rem;
+    margin-right: 3rem;
+    cursor: pointer;
+    position: relative; }
+    .urlList__remove::after {
+      content: "Remove";
+      display: inline-block;
+      font-size: 1.7rem;
+      position: absolute;
+      left: 70%;
+      top: 50%;
+      transform: translate(1rem, -50%);
+      opacity: 0;
+      transition: opacity 0.25s; }
+    .urlList__remove:hover::after {
+      opacity: 1; }
